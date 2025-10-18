@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سابقون – التقنية برؤية عربية</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="hero">
+      <span class="tagline">سابقون – التقنية برؤية عربية</span>
+
+      <h1 class="hero-title">
+        مستقبل علامتك التجارية يبدأ من هنا
+        <br />
+        بدعم تقني،
+        <span class="highlight-wrapper">
+          <span class="highlight">تفكير إبداعي</span>
+          <div class="highlight-border"></div>
+          <img src="css/cursor 1.svg" alt="cursor" class="cursor-img" />
+        </span>
+        ، وتنفيذ لا يرضى بأقل من التميز.
+      </h1>
+
+      <p class="subheading">
+        سابقون، شركة تقنية ناشئة بأيدي عربية قوية تنافس الشركات العالمية في
+        تحويل أفكارك لحلول رقمية متكاملة، لدينا فريق يعرف كيف يدمج بين الخبرة
+        العالية والرؤية الاستراتيجية مع استخدام أدوات الذكاء الاصطناعي بذكاء دون
+        الاعتماد الكلي عليه لضمان لك دائمًا سابق بخطوة.
+      </p>
+
+      <div class="buttons">
+        <a href="#" class="consult">اطلب استشارة مجانية</a>
+        <a href="#" class="start">ابدأ مشروعك الآن</a>
+      </div>
+
+      <div class="partners-section">
+        <div class="partners-container">
+          <div class="rect-80"></div>
+          <div class="rect-81"></div>
+          <div class="partners-content">
+            <p class="partners-text">
+              النجاح لا يحتاج تقنيات وأدوات بقدر ما يحتاج فريق يفهم طموحك، يتمّد
+              معك ويبني مشروعك على المدى البعيد
+            </p>
+            <div class="partners-logos">
+              <img src="css/Group 1410089203.svg" alt="شركاؤنا" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img src="css/abu-dhabi 1.png" alt="زخرفة أبوظبي" class="abu-dhabi" />
+      <img
+        src="css/arabic-language 1.png"
+        alt="زخرفة اللغة العربية"
+        class="arabic-lang"
+      />
+      <img
+        src="css/arabic-coffee 1.png"
+        alt="زخرفة القهوة العربية"
+        class="coffee"
+      />
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const highlightSection = document.querySelector(".highlight-section");
+        const borderContainer = document.querySelector(".border-container");
+        const highlightText = document.querySelector(".highlight-text");
+
+        function updateBorderSize() {
+          if (highlightText && borderContainer) {
+            const textRect = highlightText.getBoundingClientRect();
+            const padding = 30;
+            borderContainer.style.width = textRect.width + padding + "px";
+            borderContainer.style.height = textRect.height + padding + "px";
+          }
+        }
+        updateBorderSize();
+        window.addEventListener("resize", updateBorderSize);
+        setTimeout(updateBorderSize, 100);
+      });
+    </script>
+  </body>
+</html>
